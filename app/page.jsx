@@ -1,5 +1,6 @@
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -17,7 +18,7 @@ const Home = () => {
                 Vikry <span className="text-purple-500">Surya</span> Pangestu
               </span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80 text-[16px] text-justify">
+            <p className="max-w-[475px] mb-9 text-white/80 text-[16px]">
               I have 3 years of experience in developing web and mobile
               applications using frameworks like PHP, CodeIgniter, Laravel,
               Flutter, and PostgreSQL. I am skilled in building functional and
@@ -32,7 +33,7 @@ const Home = () => {
                 <span>Download CV</span>
                 <FiDownload className="text-xl"></FiDownload>
               </Button>
-              <div className="mb-8 xl:mb-0">
+              <div className="mb-2 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
                   iconStyles="w-9 h-9 border border-purple-500 rounded-full flex justify-center items-center text-purple-500 text-base hover:bg-purple-500 hover:text-primary hover:transition-all duration-500"
@@ -45,6 +46,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 };
